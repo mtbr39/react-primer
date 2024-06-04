@@ -1,4 +1,5 @@
-import {Button, Box, Heading, Icon} from '@primer/react'
+import {Button, Box, Heading, } from '@primer/react'
+import {HeartIcon, SunIcon, TrophyIcon} from '@primer/octicons-react'
 
 export default () => (
   <Box m={4}>
@@ -6,7 +7,16 @@ export default () => (
       Hello, world!
     </Heading>
     <p>This will get Primer text styles.</p>
-    <Button variant="primary">Primary</Button>
-    {/* <Button leadingVisual={HeartIcon}>Leading visual</Button> */}
+    <Box
+      sx={{
+        display: 'flex',
+        gap: 4
+      }}
+    >
+      <Button variant="primary">Primary</Button>
+      <Button leadingVisual={HeartIcon}>Heart</Button>
+      <Button leadingVisual={SunIcon}>Sun</Button>
+      <Button leadingVisual={TrophyIcon}>Trophy</Button>
+    </Box>
   </Box>
 )
