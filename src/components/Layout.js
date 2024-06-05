@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
     <Box textAlign="center">
       <Header
         sx={{
-          backgroundColor: 'muted',
+          borderBottomWidth: 1,
+          borderBottomStyle: 'solid',
+          borderColor: 'border.default',
         }}
       >
         <Header.Item>
