@@ -9,8 +9,9 @@ const Layout = ({ children }) => {
     <Box textAlign="center">
       <Header
         sx={{
-          backgroundColor: 'muted'
-        }}>
+          backgroundColor: 'muted',
+        }}
+      >
         <Header.Item>
           <Header.Link
             href="#"
@@ -35,7 +36,17 @@ const Layout = ({ children }) => {
           }}
         ></Header.Item>
       </Header>
-      <main>{children}</main>
+      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Box
+          itemAlign="center"
+          sx={{
+            width: 'medium',
+          }}
+        >
+          <main>{children}</main>
+        </Box>
+      </Box>
+
       {/* <footer>Footer</footer> */}
     </Box>
   )
