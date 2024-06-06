@@ -1,11 +1,11 @@
+import {ThemeProvider, theme, BaseStyles} from '@primer/react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import deepmerge from 'deepmerge'
 
-// import './App.css';
 import Home from './pages/Home';
-// import About from './pages/About';
+import MusicListPage from './pages/MusicListPage';
 
-import {ThemeProvider, theme, BaseStyles} from '@primer/react'
+
 
 const customTheme = deepmerge(theme, {
   colorSchemes: {
@@ -29,6 +29,7 @@ function App() {
         <Router>
           <div>
             <Routes>
+              <Route path="/" element={<MusicListPage />} />
               <Route path="/primer" element={<Home />} />
               {/* <Route path="/about" element={<About />} /> */}
             </Routes>
