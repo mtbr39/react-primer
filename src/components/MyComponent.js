@@ -1,7 +1,7 @@
-import {Button, Box, Heading, } from '@primer/react'
+import {Button, Box} from '@primer/react'
 import {HeartIcon, SunIcon, TrophyIcon} from '@primer/octicons-react'
 
-export default () => (
+const MyComponent = () => (
   <Box m={4}>
     <Box
       sx={{
@@ -16,4 +16,6 @@ export default () => (
       <Button leadingVisual={TrophyIcon}>Trophy</Button>
     </Box>
   </Box>
-)
+);
+
+export default MyComponent;

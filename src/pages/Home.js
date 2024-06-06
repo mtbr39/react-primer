@@ -1,8 +1,8 @@
 // src/pages/Home.js
 import React from 'react'
 import Layout from '../components/Layout'
-import MyComponent from '../components/MyComponent'
-import { Box } from '@primer/react'
+import { Box, Button } from '@primer/react'
+import {HeartIcon, SunIcon, TrophyIcon} from '@primer/octicons-react'
 
 const Home = () => {
   return (
@@ -20,7 +20,20 @@ const Home = () => {
       >
 
       </Box>
-      <MyComponent />
+      <Box m={4}>
+        <Box
+          sx={{
+            display: 'flex',
+            gap: 4,
+            justifyContent: 'center',
+          }}
+        >
+          <Button leadingVisual={HeartIcon} variant="primary">Primary</Button>
+          <Button leadingVisual={HeartIcon}>Heart</Button>
+          <Button leadingVisual={SunIcon}>Sun</Button>
+          <Button leadingVisual={TrophyIcon}>Trophy</Button>
+        </Box>
+      </Box>
     </Layout>
   )
 }
