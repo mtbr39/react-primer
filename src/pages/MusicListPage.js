@@ -7,6 +7,7 @@ import {HeartIcon, SunIcon, TrophyIcon} from '@primer/octicons-react'
 const MusicListPage = () => {
   return (
     <BandLayout>
+      <div className="w-screen h-screen bg-fixed bg-gradient-to-tr from-cyan-500 to-blue-500"></div>
       <Box
         sx={{
           borderWidth: 1,

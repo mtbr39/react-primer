@@ -41,9 +41,9 @@ const BandLayout = ({ children }) => {
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <Box
           itemAlign="center"
-          sx={{
-            width: 'medium',
-          }}
+          // sx={{
+          //   width: 'medium',
+          // }}
         >
           <h1 className="text-3xl font-bold underline">
             Hello world!
