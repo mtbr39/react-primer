@@ -26,7 +26,8 @@ function App() {
   return (
     <ThemeProvider theme={customTheme}>
       <BaseStyles>
-        <Router>
+        {/* 公開時は /p/react-primer/ のようなサブパスに置かれるので、PUBLIC_URL をルーターの基準にする */}
+        <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Routes>
               <Route path="/" element={<MusicListPage />} />

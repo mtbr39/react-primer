@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@primer/react'
 import { Header } from '@primer/react'
-import { MarkGithubIcon } from '@primer/octicons-react'
+import { BeakerIcon } from '@primer/octicons-react'
 import { Octicon } from '@primer/react'
 
 const Layout = ({ children }) => {
@@ -22,13 +22,13 @@ const Layout = ({ children }) => {
             }}
           >
             <Octicon
-              icon={MarkGithubIcon}
+              icon={BeakerIcon}
               size={32}
               sx={{
                 marginRight: 2,
               }}
             />
-            <span>GitHub</span>
+            <span>React Primer</span>
           </Header.Link>
         </Header.Item>
         <Header.Item full>Menu</Header.Item>
